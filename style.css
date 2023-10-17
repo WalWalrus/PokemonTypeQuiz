@@ -1,0 +1,199 @@
+/* UNIVERSAL STYLES */
+* {
+    box-sizing: border-box;
+}
+
+@media (prefers-color-scheme:dark) {
+    body { color: #e7e7e7; background-color: #3a404a; }
+}
+
+body {
+    font-family: 'Cantora One', 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* background-color: #f7f7f7; */
+}
+
+h1, h2 {
+    text-align: center;
+    font-family: 'Cantora One', 'Roboto', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+/* CONTAINER STYLES */
+
+.mainQuiz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    height: 100vh; 
+    text-align: center;
+}
+
+#pokemonName {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+/* Submit Button */
+
+#submitAnswer {
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 1.5em;
+    border: none;
+    /* border-radius: 5px; */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+    background-color: #3a404a;
+    color: #ffffff;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    font-family: 'Cantora One', 'Roboto', sans-serif;
+    letter-spacing: 1px;
+}
+
+#submitAnswer:hover {
+    background-color: #272b33;
+    transform: scale(1.05);
+}
+
+#submitAnswer:active {
+    transform: scale(0.95);
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+}
+
+/* Result*/
+
+#result {
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.2em;
+    color: #333;
+    text-align: center;
+}
+
+/* TYPES */
+
+/* Side Container */
+
+.side-container #genSelectContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
+/* Type Container */
+.type-container {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 10px; 
+}
+
+/* Buttons */
+.type-btn input[type="checkbox"] {
+    display: none;
+}
+
+.type-btn img {
+    display: block;
+    width: 135px; 
+    height: 53px; 
+    transition: outline 0.1s ease;
+}
+
+.type-btn input[type="checkbox"]:checked + img {
+    outline: 3px solid rgba(0, 0, 0, 0.9); 
+}
+
+.type-btn img:focus {
+    outline: 3px solid rgba(0,0,0,0.9); 
+}
+
+
+/* Generation Items */
+#genHeader {
+    text-align: center;
+    font-size: 1em;
+}
+
+.gen-item {
+    display: flex;
+    align-items: center;
+}
+
+.gen-item input[type="checkbox"] {
+    margin-left: 0;
+}
+
+/* NAVIGATION STYLES */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-size: 24px;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #3498db;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #2980b9;
+}
+
+/* FOOTER STYLES */
+
+.footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #7f8c8d;
+}
+
+.footer a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #2980b9;
+}
